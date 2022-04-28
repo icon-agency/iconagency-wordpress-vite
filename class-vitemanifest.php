@@ -70,7 +70,7 @@ class ViteManifest {
 	 * Confirm dev mode and server running.
 	 */
 	public function dev(): bool {
-		if ( ! getenv( 'LANDO' ) ) {
+		if ( ! getenv( 'LANDO' ) && ! getenv( 'WP_DEBUG' ) ) {
 			return false;
 		}
 
@@ -112,7 +112,7 @@ class ViteManifest {
 			$host = $lando ? $lando : 'host.docker.internal';
 		}
 
-		return $this->scheme . '://' . $docker ? $host : $this->localhost . ':' . $this->port;
+		return $this->scheme . '://' . ( $docker ? $host : $this->localhost ) . ':' . $this->port;
 	}
 
 	/**

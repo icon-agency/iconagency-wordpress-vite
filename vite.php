@@ -57,7 +57,7 @@ function vite_add_assets(): void {
 	}
 
 	$base     = $vite->path();
-	$manifest = $vite->manifest( get_stylesheet_directory() );
+	$manifest = $vite->manifest();
 
 	$entries = array_map( 'trim', explode( ',', $entry ) );
 

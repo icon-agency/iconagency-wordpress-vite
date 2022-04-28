@@ -2,11 +2,11 @@
   "name": "iconagency/wordpress_vite",
   "description": "IconAgency WordPress Vite Plugin",
   "type": "wordpress-muplugin",
-  "license": "ISC",
+  "license": "MIT",
   "authors": [
     {
-      "name": "Al Munnings",
-      "email": "al.munnings@gmail.com"
+      "name": "Icon Agency hello@iconagency.com.au",
+      "role": "Developer"
     }
   ],
   "require": {}

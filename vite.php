@@ -8,7 +8,7 @@
  * Author URI:   https://iconagency.com.au/
  * License:      MIT License
  *
- * @package iconagency-wordpress-vite
+ * @package wordpress_vite
  */
 
 /**

@@ -2,7 +2,7 @@
 /**
  * IconAgency Vite Manifest Helper
  *
- * @package iconagency-wordpress-vite
+ * @package wordpress_vite
  */
 
 /**

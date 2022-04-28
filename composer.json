@@ -9,5 +9,8 @@
       "role": "Developer"
     }
   ],
-  "require": {}
+  "require": {
+    "php": ">=7.4",
+    "wordpress/core-implementation": ">=5.9.0"
+  }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset name="Icon">
+  <description>Icon PHP CodeSniffer</description>
+  <rule ref="WordPress"/>
+
+  <!-- Limit extensions -->
+  <arg name="extensions" value="php"/>
+</ruleset>

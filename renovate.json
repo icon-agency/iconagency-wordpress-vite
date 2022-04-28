@@ -1,0 +1,7 @@
+{
+  "extends": ["config:base"],
+  "enabledManagers": ["composer"],
+  "dependencyDashboard": true,
+  "pinVersions": false,
+  "prHourlyLimit": 0
+}

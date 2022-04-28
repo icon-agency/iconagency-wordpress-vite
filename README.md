@@ -59,3 +59,7 @@ export default ({ mode }) => {
   });
 };
 ```
+
+## Dev mode
+
+WP_DEBUG should be true to enable the dev server client.

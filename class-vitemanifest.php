@@ -70,7 +70,7 @@ class ViteManifest {
 	 * Confirm dev mode and server running.
 	 */
 	public function dev(): bool {
-		if ( ! getenv( 'LANDO' ) && ! getenv( 'WP_DEBUG' ) ) {
+		if ( ! WP_DEBUG ) {
 			return false;
 		}
 

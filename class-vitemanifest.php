@@ -131,22 +131,18 @@ class ViteManifest {
 
 	/**
 	 * Path to the manifets file.
-	 *
-	 * @param string $dir Path to theme.
 	 */
-	private function manifest_path( $dir ): string {
-		return $dir . '/' . $this->prod_path . 'manifest.json';
+	private function manifest_path(): string {
+		return get_stylesheet_directory() . '/' . $this->prod_path . 'manifest.json';
 	}
 
 	/**
 	 * Manifest content.
-	 *
-	 * @param string $dir Path to theme.
 	 */
-	public function manifest( $dir ): array {
+	public function manifest(): array {
 		global $wp_filesystem;
 
-		$path = $this->manifest_path( $dir );
+		$path = $this->manifest_path();
 
 		if ( ! $this->dev() && $wp_filesystem->exists( $path ) ) {
 			return json_decode( $wp_filesystem->get_contents( $path ), true );

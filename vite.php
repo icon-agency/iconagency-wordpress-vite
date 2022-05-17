@@ -18,13 +18,9 @@ function vite_add_assets(): void {
 	require_once 'class-vitemanifest.php';
 	require_once ABSPATH . 'wp-admin/includes/file.php';
 
-	global $wp_filesystem;
-
-	WP_Filesystem();
-
 	$theme_style = get_stylesheet_directory() . '/style.css';
 
-	if ( ! $wp_filesystem->exists( $theme_style ) ) {
+	if ( ! file_exists( $theme_style ) ) {
 		return;
 	}
 

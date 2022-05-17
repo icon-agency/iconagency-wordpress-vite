@@ -103,10 +103,8 @@ class ViteManifest {
 	 * Internal host path for docker.
 	 */
 	private function dev_host(): string {
-		global $wp_filesystem;
-
 		$lando  = getenv( 'LANDO_HOST_IP' );
-		$docker = $wp_filesystem->exists( '/.dockerenv' );
+		$docker = file_exists( '/.dockerenv' );
 
 		if ( $docker ) {
 			$host = $lando ? $lando : 'host.docker.internal';
@@ -140,12 +138,10 @@ class ViteManifest {
 	 * Manifest content.
 	 */
 	public function manifest(): array {
-		global $wp_filesystem;
-
 		$path = $this->manifest_path();
 
-		if ( ! $this->dev() && $wp_filesystem->exists( $path ) ) {
-			return json_decode( $wp_filesystem->get_contents( $path ), true );
+		if ( ! $this->dev() && file_exists( $path ) ) {
+			return json_decode( file_get_contents( $path ), true );
 		}
 
 		return array();

@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:  IconAgency WordPress Vite
- * Plugin URI:   https://bitbucket.org/iconagency/iconagency-wordpress-vite
- * Description:  Autoload manifest entries foom Vite.
+ * Plugin URI:   https://github.com/icon-agency/iconagency-wordpress-vite
+ * Description:  Autoload manifest entries from Vite.
  * Version:      1.0.0
  * Author:       IconAgency
  * Author URI:   https://iconagency.com.au/
